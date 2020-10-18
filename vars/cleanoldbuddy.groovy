@@ -1,5 +1,3 @@
-def call() {
-  properties([
-    buildDiscarder(logRotator(numToKeepStr: '5'))
-  ])
+def call(String name = 'human') {
+    echo "Hello, ${name}."
 }
